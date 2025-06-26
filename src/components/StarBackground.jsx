@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
 
 // id, size, x, y, opacity, animationDuration
-// id, size, x, y, delay, Duration
+// id, size, x, y, delay, animationDuration
 
 export const StarBackground = () => {
   const [stars, setStars] = useState([]);
-  const [fallingStars, setFallingStars] = useState([])
+  const [fallingStars, setFallingStars] = useState([]);
 
   useEffect(() => {
     generateStars();
+    generateFallingStars();
   }, []);
 
-//   stars background with animation
+  //   stars background with animation
   const generateStars = () => {
     const numberOfStars = Math.floor(
       (window.innerWidth * window.innerHeight) / 10000
@@ -34,7 +35,27 @@ export const StarBackground = () => {
     setStars(newStars);
   };
 
+  //   Falling stars added to the background with animation
+  const generateFallingStars = () => {
+    const numberOfFallingStars = 4;
+    const newFallingStars = [];
 
+  
+
+    // looping through the amount of falling stars
+    for (let i = 0; i < numberOfFallingStars; i++) {
+      newFallingStars.push({
+        id: i,
+        size: Math.random() * 2 + 1,
+        x: Math.random() * 100,
+        y: Math.random() * 20,
+        delay: Math.random() * 15,
+        animationDuration: Math.random() * 3 + 3,
+      });
+    }
+
+    setFallingStars(newFallingStars);
+  };
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
@@ -49,7 +70,23 @@ export const StarBackground = () => {
             top: star.y + "%",
             opacity: star.opacity,
             animationDuration: star.animationDuration + "s",
-          }}/>
+          }}
+        />
+      ))}
+
+      {fallingStars.map((fallingStar) => (
+        <div
+          key={fallingStar.id}
+          className="meteor animate-meteor"
+          style={{
+            width: fallingStar.size * 2 + "px",
+            height: fallingStar.size * 2 + "px",
+            left: fallingStar.x + "%",
+            top: fallingStar.y + "%",
+            animationDelay: fallingStar.delay,
+            animationDuration: fallingStar.animationDuration + "s",
+          }}
+        />
       ))}
     </div>
   );
