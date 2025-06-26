@@ -10,6 +10,13 @@ export const StarBackground = () => {
   useEffect(() => {
     generateStars();
     generateFallingStars();
+
+    const handleResize = () => {
+        generateStars();
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize )
   }, []);
 
   //   stars background with animation
