@@ -85,7 +85,7 @@ export const ContactSection = () => {
             ))}
 
             <div className="pt-8">
-              <div className="flex space-x-4">
+              <div className="flex justify-center md:justify-start space-x-4">
                 <a
                   href="https://www.linkedin.com/in/chima-mbanefo-3a6b50245/"
                   target="_blank"
