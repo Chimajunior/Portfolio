@@ -2,7 +2,6 @@
 
 This is a modern and responsive developer portfolio built using **React** and **Vite**. It showcases personal projects, skills, and contact information with a clean UI and smooth performance.
 
-> Fast, minimal, and developer-friendly — perfect for showcasing your work!
 
 ---
 
