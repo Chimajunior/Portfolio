@@ -45,7 +45,7 @@ export const ContactSection = () => {
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       label: "Location",
-      value: "Cardiff, Wales, UK",
+      value: "United Kingdom",
       href: "#",
     },
   ];
