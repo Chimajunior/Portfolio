@@ -4,40 +4,43 @@ import { cn } from "@/lib/utils";
 
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
-      setIsDarkMode(true);
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
       document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
     } else {
-      localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
       setIsDarkMode(false);
     }
+
+    setMounted(true);
   }, []);
 
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDarkMode(false);
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsDarkMode(true);
-    }
+    const newTheme = isDarkMode ? "light" : "dark";
+    document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", newTheme);
+    setIsDarkMode(!isDarkMode);
   };
+
+  if (!mounted) return null;
 
   return (
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed max-s:;hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outline-hidden"
+        "p-2 rounded-full transition-colors duration-300",
+        "bg-muted hover:bg-muted/80 focus:outline-none"
       )}
+      aria-label="Toggle theme"
     >
       {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
+        <Sun className="h-6 w-6 text-white" />
       ) : (
         <Moon className="h-6 w-6 text-blue-900" />
       )}

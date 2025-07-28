@@ -8,7 +8,7 @@ export const StarBackground = () => {
   const [fallingStars, setFallingStars] = useState([]);
 
   useEffect(() => {
-    generateStars();
+    // generateStars();
     generateFallingStars();
 
     const handleResize = () => {
@@ -19,10 +19,10 @@ export const StarBackground = () => {
     return () => window.removeEventListener("resize", handleResize )
   }, []);
 
-  //   stars background with animation
+    // stars background with animation
   const generateStars = () => {
     const numberOfStars = Math.floor(
-      (window.innerWidth * window.innerHeight) / 10000
+      (window.innerWidth * window.innerHeight) / 13000
     );
 
     const newStars = [];
@@ -31,7 +31,7 @@ export const StarBackground = () => {
     for (let i = 0; i < numberOfStars; i++) {
       newStars.push({
         id: i,
-        size: Math.random() * 3 + 1,
+        size: Math.random() * 1 + 1,
         x: Math.random() * 100,
         y: Math.random() * 100,
         opacity: Math.random() * 0.5 + 0.5,
@@ -53,11 +53,11 @@ export const StarBackground = () => {
     for (let i = 0; i < numberOfFallingStars; i++) {
       newFallingStars.push({
         id: i,
-        size: Math.random() * 2 + 1,
+        size: Math.random() * 1 + 1,
         x: Math.random() * 100,
-        y: Math.random() * 20,
+        y: Math.random() * 50,
         delay: Math.random() * 15,
-        animationDuration: Math.random() * 3 + 3,
+        animationDuration: Math.random() * 3 + 2,
       });
     }
 
@@ -65,8 +65,8 @@ export const StarBackground = () => {
   };
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-      {stars.map((star) => (
+    <div className="fixed inset-0  overflow-hidden pointer-events-none z-0">
+      {/* {stars.map((star) => (
         <div
           key={star.id}
           className="star animate-pulse-subtle"
@@ -79,7 +79,7 @@ export const StarBackground = () => {
             animationDuration: star.animationDuration + "s",
           }}
         />
-      ))}
+      ))} */}
 
       {fallingStars.map((fallingStar) => (
         <div
