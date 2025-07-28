@@ -18,7 +18,7 @@ const projects = [
     "A personal portfolio website showcasing projects, skills, and contact information.",
     image: "/projects/chimtech2.png",
     tags: ["React", "Tailwind"],
-    demoUrl: "#",
+    demoUrl: "",
     githubUrl: "https://github.com/Chimajunior/Portfolio",
   },
 ];
