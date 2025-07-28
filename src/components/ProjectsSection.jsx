@@ -19,7 +19,27 @@ const projects = [
     image: "/projects/chimtech2.png",
     tags: ["React", "Tailwind"],
     demoUrl: "",
-    githubUrl: "https://github.com/Chimajunior/Portfolio",
+    githubUrl: "#",
+  },
+  {
+    id: 3,
+    title: "Coming Soon",
+    description:
+    "",
+    image: "/projects/coming.png",
+    tags: [],
+    demoUrl: "",
+    githubUrl: "#",
+  },
+  {
+    id: 4,
+    title: "Coming Soon",
+    description:
+    "",
+    image: "/projects/coming.png",
+    tags: [],
+    demoUrl: "",
+    githubUrl: "#",
   },
 ];
 
