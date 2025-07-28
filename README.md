@@ -1,12 +1,28 @@
-# React + Vite
+# 🚀 Portfolio – Built with React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern and responsive developer portfolio built using **React** and **Vite**. It showcases personal projects, skills, and contact information with a clean UI and smooth performance.
 
-Currently, two official plugins are available:
+> Fast, minimal, and developer-friendly — perfect for showcasing your work!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ Lightning-fast development with [Vite](https://vitejs.dev/)
+- ⚛️ Component-based architecture with React
+- 🎨 Custom-built sections: Hero, About, Projects, Skills, Contact
+- 🌗 Theme toggle (Light/Dark mode)
+- 📱 Responsive design (mobile-first)
+- 🌌 Animated starry background
+- 📦 Modular and maintainable folder structure
+- 🔧 ESLint for code quality
+
+---
+
+## 🛠 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/) 
+- [Tailwind CSS](https://tailwindcss.com/) 
+
+---
