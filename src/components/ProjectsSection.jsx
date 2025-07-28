@@ -15,11 +15,11 @@ const projects = [
     id: 2,
     title: "My Portfolio",
     description:
-      "A Beautiful database platform with user ratings, reviews and personalised reccomendations",
+    "A personal portfolio website showcasing projects, skills, and contact information.",
     image: "/projects/chimtech2.png",
     tags: ["React", "Tailwind"],
-    demoUrl: "https://cmbd-movies.onrender.com/",
-    githubUrl: "#",
+    demoUrl: "#",
+    githubUrl: "https://github.com/Chimajunior/Portfolio",
   },
 ];
 
