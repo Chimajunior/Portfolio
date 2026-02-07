@@ -19,21 +19,21 @@ const projects = [
     image: "/projects/chimtech2.png",
     tags: ["React", "Tailwind"],
     demoUrl: "",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Chimajunior/Portfolio",
   },
   {
     id: 3,
-    title: "Coming Soon",
+    title: 'Expense Tracker - "In progress"',
     description:
     "",
-    image: "/projects/coming.png",
-    tags: [],
+    image: "/projects/expense.png",
+    tags: ["React", "Tailwind", "Express", "MongoDB"],
     demoUrl: "",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Chimajunior/Expense-Tracker",
   },
   {
     id: 4,
-    title: "Coming Soon",
+    title: "Eccomerce platform - Coming Soon",
     description:
     "",
     image: "/projects/coming.png",
@@ -49,6 +49,7 @@ const tagIconMap = {
   Tailwind: "devicon-tailwindcss-plain colored",
   Express: "devicon-express-original",
   MySQL: "devicon-mysql-plain colored",
+  MongoDB: "devicon-mongodb-plain colored",
 };
 
 export const ProjectsSection = () => {
@@ -56,7 +57,7 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Recent <span className="text-primary"> Projects </span>
+          Personal <span className="text-primary"> Projects </span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-2-2xl mx-auto">

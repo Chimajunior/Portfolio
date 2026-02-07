@@ -59,7 +59,7 @@ export const ContactSection = () => {
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Interested in working together or have something to discuss? Feel free
-          to reach out and I’ll get back to you soon.
+          to reach out and I’ll get back to you.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -39,8 +39,8 @@ const skills = [
   },
   { name: "MySQL", icon: "devicon-mysql-plain colored", category: "backend" },
   {
-    name: "Remix",
-    icon: "devicon-remix-original",
+    name: "MongoDB",
+    icon: "devicon-mongodb-plain colored",
     category: "backend",
     style: { color: "#ffffff" }, // for inline white color
   },
@@ -92,10 +92,10 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-md flex flex-col items-center justify-center group hover:shadow-lg transition"
+              className="bg-card p-5 rounded-lg shadow-md flex flex-col items-center justify-center group hover:shadow-lg transition"
             >
               <i
-                className={`${skill.icon} text-5xl mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:animate-pulse`}
+                className={`${skill.icon} text-4xl mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:animate-pulse`}
               ></i>
               <span className="text-center font-medium">{skill.name}</span>
             </div>

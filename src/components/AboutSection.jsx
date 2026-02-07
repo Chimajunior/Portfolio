@@ -29,7 +29,7 @@ export const AboutSection = () => {
               <a href="#contact" className="cosmic-button" rel="noopener noreferrer" >
                 Get In Touch
               </a>
-
+{/* 
               <a
                 href="/your-cv.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary transition-colors duration-300 text-center"
@@ -37,7 +37,7 @@ export const AboutSection = () => {
                 rel="noopener noreferrer"
               >
                 Download CV
-              </a>
+              </a> */}
             </div>
           </div>
 
