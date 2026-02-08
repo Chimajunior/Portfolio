@@ -26,7 +26,7 @@ const projects = [
     title: 'Expense Tracker - "In progress"',
     description:
     "",
-    image: "/projects/expense.png",
+    image: "/projects/expense1.png",
     tags: ["React", "Tailwind", "Express", "MongoDB"],
     demoUrl: "",
     githubUrl: "https://github.com/Chimajunior/Expense-Tracker",
@@ -38,8 +38,7 @@ const projects = [
     "",
     image: "/projects/coming.png",
     tags: [],
-    demoUrl: "",
-    githubUrl: "#",
+    
   },
 ];
 
